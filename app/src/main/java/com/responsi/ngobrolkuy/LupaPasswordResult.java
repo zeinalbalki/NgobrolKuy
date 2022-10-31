@@ -7,19 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class ProfilePicActivity extends AppCompatActivity {
-    private TextView lewati;
+public class LupaPasswordResult extends AppCompatActivity {
+    private TextView kembaliLupaPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile_pic);
+        setContentView(R.layout.activity_lupa_password_result);
 
-        lewati = findViewById(R.id.lewati);
-        lewati.setOnClickListener(new View.OnClickListener() {
+        kembaliLupaPassword = findViewById(R.id.kembaliLupaPassword);
+        kembaliLupaPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent pindah = new Intent(ProfilePicActivity.this, HomeChat.class);
+                Intent pindah = new Intent(LupaPasswordResult.this, LoginActivity.class);
                 startActivity(pindah);
             }
         });
